@@ -81,12 +81,12 @@ const About = () => {
             </Box>
           </Container>
         </SimpleGrid>
-        <Center mt={20}>
+        {/* <Center mt={20}>
           <Heading fontSize="3rem" mt={2} mx={4}>
             About the Creators
           </Heading>
-        </Center>
-        <SimpleGrid columns={[0, 2]} mx={[0, 20]} mt={[20, 20]}>
+        </Center> */}
+        {/* <SimpleGrid columns={[0, 2]} mx={[0, 20]} mt={[20, 20]}>
           <Box>
             <Creator
               name="Freeman Jiang"
@@ -103,7 +103,7 @@ const About = () => {
               img="/jasonyuan.jpg"
             />
           </Box>
-        </SimpleGrid>
+        </SimpleGrid> */}
       </Box>
       <Footer />
     </>

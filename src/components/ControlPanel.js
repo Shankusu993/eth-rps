@@ -31,7 +31,7 @@ import { CommitmentButton } from "./Buttons/CommitmentButton";
 import { Search } from "./Search";
 import { Status } from "./Status";
 
-// const rpsAddress = "0x940E847a290582FAb776F8Ae794f23D9B660a6d2"; // L1 Ropsten Test Network
+const wc_devAddress = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512"; // L2 WC dev Test Network
 const ropstenAddress = "0x67cA0B42756B388387d9643C70626bA8CE57Aa9e"; // L1 Ropsten Test Network
 const arbitrumAddress = "0x940E847a290582FAb776F8Ae794f23D9B660a6d2"; // L2 Arbitrum Rinkeby
 const polygonAddress = "0x8Be503bcdEd90ED42Eff31f56199399B2b0154CA"; // L2 Polygon Mumbai
@@ -50,7 +50,7 @@ export const ControlPanel = () => {
   const { colorMode } = useColorMode();
   const value = useContext(AppContext);
   const [pending, setPending] = useState(false);
-  const [rpsAddress, setRpsAddress] = useState(ropstenAddress);
+  const [rpsAddress, setRpsAddress] = useState(wc_devAddress);
 
   const gameStatus = () => {
     switch (value.state.status) {
@@ -394,8 +394,9 @@ export const ControlPanel = () => {
           boxShadow="md"
           onChange={(e) => setRpsAddress(e.target.value)}
         >
-          <option value={ropstenAddress}>Ropsten (L1)</option>
-          <option value={arbitrumAddress}>Arbitrum Rinkeby (L2)</option>
+          <option value={wc_devAddress} > WC Development (L2)</option>
+          <option value={ropstenAddress} disabled>Ropsten (L1)</option>
+          <option value={arbitrumAddress} disabled>Arbitrum Rinkeby (L2)</option>
           <option value="kovan" disabled>
             Optimism Kovan (L2)
           </option>

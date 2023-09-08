@@ -53,7 +53,7 @@ export default function Footer() {
         align={{ base: "center", md: "center" }}
       >
         <Logo />
-        <Text>✨ Made in 2021.</Text>
+        <Text>✨ Updated in 2023.</Text>
         <Stack direction={"row"} spacing={6}>
           <Link isExternal href="https://github.com/freeman-jiang/eth-rps">
             <IconButton

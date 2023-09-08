@@ -49,7 +49,7 @@ export default function NavBar() {
 
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={4}>
-              <Link isExternal href="https://github.com/freeman-jiang/eth-rps">
+              <Link isExternal href="https://github.com/Shankusu993/eth-rps">
                 <IconButton
                   aria-label="GitHub Repository"
                   size="lg"
